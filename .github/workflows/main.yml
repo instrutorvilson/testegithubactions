@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: developer
-      url: 'google.com'
+      url: "www.google.com"
     needs: build  
     steps:
      - name: dev
@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
       name: homolog
-      url: 'google.com'
+      url: 'www.google.com'
     needs: deploy-dev  
     steps:
      - name: homolog
