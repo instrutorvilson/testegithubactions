@@ -1,0 +1,19 @@
+name: FluxoEnviroments
+on:
+  workflow_dispatch:
+
+jobs:  
+  build:   
+    runs-on: ubuntu-latest
+    steps:
+     - name: dev
+       run: echo hello, world!
+       
+  deploy-dev:   
+    runs-on: ubuntu-latest
+    environment: 
+      name: developer
+      url: 'google.com'
+    steps:
+     - name: dev
+       run: echo estou no des
