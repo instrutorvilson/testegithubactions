@@ -36,5 +36,5 @@ jobs:
       url: 'google.com'
     needs: deploy-homolog  
     steps:
-     - name: prod
+     - name: producao
        run: echo estou na producção
