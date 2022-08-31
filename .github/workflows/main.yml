@@ -30,7 +30,7 @@ jobs:
        run: echo estou na homologacao
    
   deploy-prod:   
-    runs-on: ubuntu-lat est
+    runs-on: ubuntu-latest
     environment: 
       name: prod
       url: 'google.com'
