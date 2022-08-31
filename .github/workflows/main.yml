@@ -14,6 +14,17 @@ jobs:
     environment: 
       name: developer
       url: 'google.com'
+    needs: build  
     steps:
      - name: dev
-       run: echo estou no des
+       run: echo estou no developer
+       
+  deploy-homolog:   
+    runs-on: ubuntu-latest
+    environment: 
+      name: homolog
+      url: 'google.com'
+    needs: deploy-dev  
+    steps:
+     - name: homolog
+       run: echo estou na homologacao
