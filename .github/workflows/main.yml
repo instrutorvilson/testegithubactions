@@ -28,3 +28,13 @@ jobs:
     steps:
      - name: homolog
        run: echo estou na homologacao
+   
+  deploy-prod:   
+    runs-on: ubuntu-lat est
+    environment: 
+      name: prod
+      url: 'google.com'
+    needs: deploy-homolog  
+    steps:
+     - name: prod
+       run: echo estou na producção
